@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="i.png" size="32x32">
+  <title>KLASSYINK - Buy Online Quirky,Funny,Cool T-shirts for Men & amp; Women | Customized T-shirts India | Design own T-shirt | Corporate Tshirts with Logo printed Tshirt |classyink | classyink.com | Customized Gift and Products | Buy Online T Shirt Store | Buy Online Tshirts | Buy Online Mugs | Buy Online Coasters | Buy Online Badges | Buy Online Luggage Tag | Buy Online Daily Planners | Buy Online Weekly planners | Buy Online Diary.
+  </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<style>
+.contain{
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: white;
+}
+
+.contain .box2{
+  background-color: white;
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: red;
+}
+
+.container .box {
+  background-color: red;
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  color: white;
+}
+
+.con {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: yellow;
+}
+
+.con .box1 {
+  background-color: yellow;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  color: black;
+}
+
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom :hover{
+  transform: scale(1.1);
+}
+
+a:link{
+  text-decoration: none;
+}
+
+.end{
+  display: block;
+  background-color: black;
+  color: white;
+  padding-left: 255px;
+}
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-5">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide">
+    <img src="i.png"></img>
+    </h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a onclick="proFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      PRODUCTS <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>GRAPHIC T-SHIRTS</a>
+      <a href="#" class="w3-bar-item w3-button">PLAIN T-SHIRTS</a>
+      <a href="#" class="w3-bar-item w3-button">MOBILE COVER</a>
+      <a href="#" class="w3-bar-item w3-button">CUSTOM DESIGN</a>
+    </div>
+    <a onclick="cateFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      CATEGORIES <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>MOBILE COVERS</a>
+      <a href="#" class="w3-bar-item w3-button">T-SHIRTS</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">BLOGS</a>
+    <a href="#" class="w3-bar-item w3-button">ABOUT US</a>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">CONTACT US</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter')
+  .style.display='block'">NEWSLETTER</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">SUBSCRIBE</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide"><img src="i.png"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+
+  <!------------------------------------------------------------------------------------------------------------------------>
+  <br>
+  <div class="w3-content w3-display-container" style="max-width:920px; display: flex;">
+  <a href="#">
+  <img class="mySlides" src="b2.jpg" style="width:915px;height: 500px">
+  <img class="mySlides" src="b1.jpg" style="width:915px;height: 500px">
+  <img class="mySlides" src="b3.jpg" style="width:915px;height: 500px">
+  <img class="mySlides" src="d42.jpg" style="width:915px;height: 500px">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </a>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+  <br><br><br>
+
+  <div style="display: flex;">
+    <a href="#">
+      <img src="d11.jpg" style="width: 280px; height: 300px; padding-left: 30px; ">
+    </a>
+    <a href="#">
+      <img src="d12.jpg" style="width: 300px; height: 300px; padding-left: 70px; ">
+    </a>
+    <a href="#">
+      <img src="d13.jpg" style="width: 300px; height: 300px; padding-left: 70px; ">
+    </a>
+  </div>
+
+  <br><br><br>
+
+  <div style="display: flex;">
+    <a href="#">
+      <img src="d21.jpg" style="width: 280px; height: 320px; padding-left: 30px; ">
+    </a>
+    <a href="#">
+      <img src="b3.jpg" style="width: 650px; height: 300px; padding-left: 70px; ">
+    </a>
+  </div>
+
+  <br><br><br>
+
+  <div style="display: flex;">
+    <a href="#">
+      <img src="d31.jpg" style="width: 450px; height: 350px; padding-left: 30px; ">
+    </a>
+    <a href="#">
+      <img src="d32.jpg" style="width: 450px; height: 350px; padding-left: 70px; ">
+    </a>
+  </div>
+
+  <br><br><br>  
+
+  <div style="display: flex;">
+    <a href="#">
+      <img src="d41.jpg" style="width: 400px; height: 320px; padding-left: 30px; ">
+    </a>
+    <a href="#">
+      <img src="d42.jpg" style="width: 500px; height: 300px; padding-left: 70px; ">
+    </a>
+  </div>
+
+  <br><br><br>
+
+  <div class="container" style="display: flex;">
+    <div class="box">
+      <h2>Pricing</h2>
+        <p>We cut out the middleman to make everyday fashionable</p> 
+    </div>
+
+    <div class="box">
+      <h2>Innovation in <hr> Quality</h2>
+        <p>We manufacture our own products to ensure you get the best products</p> 
+        <h3>Try Now ></h3>
+    </div>
+    
+    <div class="box">    
+      <h2>Designs</h2>
+        <p>We create designs that are an extension of you</p>
+    </div>
+  </div>
+  
+  <br><br><br>
+
+  <h2>-----------------------OUR MOST RECENT BLOGS-----------------------</h2>
+  <div class="contain" style="display: flex;">
+    <div class="box2">
+      <a href="href=http://www.klassyink.com/how-klassyink-got-its-name/">
+      <div class="zoom"><img src="blog1.jpg" style="width: 300px; height: 200px;"></div>
+      <h4><b>HOW KlassyInk GOT ITS NAME</b></h4>
+      <h6>September 9th, 2015|6,337 Comments</h6>
+      </a>
+      <h5>HOW KlassyInk GOT ITS NAME!How we Settled on a Unique NameOur founders, Maheshwari [...]</h5>
+    </div>
+  
+    <div class="box2">
+      <a href="http://www.klassyink.com/klassyink-gets-featured-in-the-ideapreneur-india-e-magazine/">
+      <div class="zoom"><img src="blog2.jpg" style="width: 300px; height: 200px;"></div>
+      <h4><b>KlassyInk GETS FEATURED IN THE IDEAPRENEUR E-MAGAZINE</b></h4>
+      <h6>September 9th, 2015|6,572 Comments</h6>
+      </a>
+      <h5>KlassyInk GETS FEATURED IN THE ‘Ideapreneur India E-Magazine’! KlassyInk got featured in [...]</h5>
+    </div>
+  
+    <div class="box2">
+      <a href="http://www.klassyink.com/the-story-behind-our-logo-color-for-klassyink/">
+      <div class="zoom"><img src="blog3.jpg" style="width: 300px; height: 200px;"></div>
+      <h4><b>THE STORY BEHIND OUR LOGO COLOUR FOR KlassyInk</b></h4>
+      <h6>September 9th, 2015|6,445 Comments</h6>
+      </a>
+      <h5>THE STORY BEHIND OUR LOGO COLOR! What is the first thing that [...]</h5>
+    </div>
+  </div>
+
+  <br><br><br>  
+
+  <div class="con" style="display: flex;">    
+    <div class="box1">
+      <h2>Get discounts everyday to your email</h2>
+        <input type="email" name="email" placeholder="Insert valid Email">
+        <button type="submit" name="submit" style="border-radius: 20px; background-color: blue;color: white">Submit</button> 
+    </div>
+
+    <div class="box1">
+      <h2>Fanpage</h2>
+      <div class="zoom"><img src="fan.jpg" style="width: 250px;height: 100px;"></img></div>
+    </div>
+    
+    <div class="box1">    
+      <h2>FOLLOW US IN OUR SOCIAL NETWORKS</h2>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>     
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Klassy Ink</p>
+        <p><i class="fa fa-fw fa-envelope"></i> info@klassyink.com</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+  <div class="end" class="w3-row-padding" class="w3-col s4">
+    <p align="center">© Copyright 2015 - 2019   |   All Rights Reserved | KlassyInk.com  </p>
+    <p align="center">KlassyInk is India's coolest youth lifestyle brand. We are irreverent, desi, fun & forever young. This is the underlying philosophy when we create content, products and services. Using popular culture, emerging trends, design & cultural insights we seek to be a platform for all things that the young relate to.</p>
+    <p align="center">All artwork posted on this site is intended as fan art and is not purported to be official merchandise unless indicated otherwise. If you have any issues regarding the artwork do write to us at </p>
+    <p align="center">info@klassyink.com</p>
+    <br>
+    <div align="center"><img src="foot.png"></img></div>
+    <div align="center">
+      <br>
+      <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+      <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+      <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+      <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+      <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+    </div>
+  </div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px ; border-radius: 15px 50px 30px;
+  background: #73AD21;
+  padding: 10px; 
+  width: 910px;
+  height: 240px; ">
+    <div class="w3-container w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input" type="text" placeholder="Enter e-mail" style="border-radius: 30px;"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red " style="border-radius: 30px;" onclick="document.getElementById('newsletter').style.display='none' ">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+
+function proFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function cateFunc() {
+  var y = document.getElementById("demoAc");
+  if (y.className.indexOf("w3-show") == -1) {
+    y.className += " w3-show";
+  } else {
+    y.className = y.className.replace(" w3-show", "");
+  }
+}
+
+
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
